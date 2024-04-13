@@ -476,6 +476,15 @@ TEST(OperatorIndex, Test_2) {
   }
 }
 
+TEST(Constructor, Test_1) {
+  Matrix matr;
+  double array[9] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+  matr.setValuesWithArray(array);
+  Matrix matr2;
+  matr2 = matr;
+  ASSERT_TRUE(matr == matr2);
+}
+
 int main(int argc, char** argv) {
   testing::InitGoogleTest(&argc, argv);
 

@@ -49,7 +49,6 @@ class Matrix {
   double operator()(int i, int j);
 
   // utils
-  void print();
   void setValues(double value);
   void setValues();
   void setValuesWithArray(double array[]);

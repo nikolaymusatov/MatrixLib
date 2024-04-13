@@ -5,22 +5,9 @@
 #include <exception>
 #include <iostream>
 
-void Matrix::print() {
-  for (int r = 0; r < this->rows_; r++) {
-    for (int c = 0; c < this->cols_; c++)
-      std::cout << this->matrix_[r][c] << '\t';
-    std::cout << std::endl;
-  }
-}
-
 void Matrix::setValues(double value) {
   for (int r = 0; r < this->rows_; r++)
     for (int c = 0; c < this->cols_; c++) this->matrix_[r][c] = value;
-}
-
-void Matrix::setValues() {
-  for (int r = 0; r < this->rows_; r++)
-    for (int c = 0; c < this->cols_; c++) this->matrix_[r][c] = rand() % 10;
 }
 
 void Matrix::setValuesWithArray(double array[]) {
